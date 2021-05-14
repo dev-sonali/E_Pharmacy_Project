@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+
+<link rel="stylesheet" type="text/css" href="./resources/css/Style.css">
+<meta name="viewport" content="width=device-width" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+		$("button").click(function(){
+			$("p").toggle(1000);
+			alert("Click ok to hide")
+		});
+ });
+ </script>
+</head>
+<body>
+	<h1> E-Pharmacy 
+	</h1>
+	<button id="ajaxBtn" >Click to hide</button>
+	<p>
+    Welcome to E-Pharmacy<br>download the app from play-store.
+	</p>
+	<p><a href="welcome.html"> back to welcome page</a></p>
+</body>
+</html>
+
+
+<!-- <link rel="stylesheet" type="text/css" href="./resources/css/Style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script >
+$(document).ready(function(){
+		$("button").click(function(){
+			$("p").toggle(1000);
+		});
+ });-->
+ 
+</script>
+</head>
+<body>
+<!-- <p> Welcome to E-Pharmacy<br>download the app from play-store</p>
+<p><a href="welcome.html"> back to welcome page</a></p>
+ <button>Click to hide this add</button>--> 
+<div class="main">
+<div class="register">
+<h2>User Register here</h2>
+<form action="UserServlet" id="register" method="Post">
+<label>User id</label>
+<br>
+<input type="text" name="user_id" id="userId" placeholder="Enter the User Id">
+<!-- <h5 id="firstcheck" style="color: red;">
+                **Please Fill the User Id
+              </h5>-->
+<br><br>
+<label>User Name</label>
+<br>
+<input type="text" name="name" id="userName" placeholder="Enter User Name">
+ <!-- <h5 id="firstcheck" style="color: red;">
+                **Please Fill the User Name
+              </h5>-->
+<br></br>
+<label>Address</label>
+<br>
+<input type="text" name="address" id="Address" placeholder="Enter Address">
+<!-- <h5 id="firstcheck" style="color: red;">
+                **Please Fill the Address
+              </h5>-->
+<br><br>
+<label>Phone number</label>
+<br>
+<input type="text" name="number" id="phoneNumber" placeholder="Enter Phone number">
+<!-- <h5 id="firstcheck" style="color: red;">
+                **Please Fill the Phone Number
+              </h5>-->
+<br><br>
+<label>Email</label>
+<br>
+<input type="text" name="email" id="eMail" placeholder="Enter Email">
+<!-- <h5 id="firstcheck" style="color: red;">
+                **Please Fill the Email
+              </h5>-->
+<br><br>
+<label>Password</label>
+<br>
+<input type="text" name="pwd" id="password" placeholder="Enter Password">
+<!-- <h5 id="firstcheck" style="color: red;">
+                **Please Fill the Password
+              </h5>-->
+<br><br>
+<input type="submit" id="add" value="Add User"> 
+</form>
+</div>
+</div>
+<!-- script src="app.js"></script>-->
+</body>
+</html>

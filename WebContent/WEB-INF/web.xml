@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>E_Pharmacy</display-name>
+  <context-param>
+    <param-name>log4j-config-location</param-name>
+    <param-value>WEB-INF/log4j.properties</param-value>
+  </context-param>
+  <listener>
+    <listener-class>loggers.pakage.ContextListener</listener-class>
+  </listener>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>CompanyServlet</servlet-name>
+    <servlet-class>com.realcoderz.CompanyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CompanyServlet</servlet-name>
+    <url-pattern>/CompanyServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>loginFile.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>LoginFileServlet</servlet-name>
+    <servlet-class>com.realcoderz.LoginFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginFileServlet</servlet-name>
+    <url-pattern>/LoginFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DrugServlet</servlet-name>
+    <servlet-class>com.realcoderz.DrugServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DrugServlet</servlet-name>
+    <url-pattern>/DrugServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DrugDeleteServlet</servlet-name>
+    <servlet-class>com.realcoderz.DrugDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DrugDeleteServlet</servlet-name>
+    <url-pattern>/DrugDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>com.realcoderz.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>usern.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.realcoderz.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>purchaseFile.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>PurchaseServlet</servlet-name>
+    <servlet-class>com.realcoderz.PurchaseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PurchaseServlet</servlet-name>
+    <url-pattern>/PurchaseServlet</url-pattern>
+  </servlet-mapping>
+
+<welcome-file-list>
+    <welcome-file>medicine.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>UserTableServlet</servlet-name>
+    <servlet-class>com.realcoderz.UserTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserTableServlet</servlet-name>
+    <url-pattern>/UserTableServlet</url-pattern>
+  </servlet-mapping>
+
+  
+</web-app>
